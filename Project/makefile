@@ -4,6 +4,7 @@ VENV = venv
 # Installa le dipendenze
 install:
 	python3 -m venv $(VENV)
+	$(VENV)/bin/activate
 	$(VENV)/bin/pip install -r requirements.txt
 
 # Prepara i dati
@@ -25,6 +26,7 @@ clean:
 # Aiuto: mostra i comandi disponibili
 help:
 	@echo "Comandi disponibili:"
+	@echo "  make clone		    - Carica progetto da github"
 	@echo "  make install       - Installa le dipendenze"
 	@echo "  make prepare_data  - Prepara il dataset"
 	@echo "  make train         - Addestra il modello"

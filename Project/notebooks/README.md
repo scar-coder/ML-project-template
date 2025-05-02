@@ -6,4 +6,6 @@ La cartella _notebooks/_ viene utilizzata nei progetti di Machine Learning, Deep
 
 # Notebooks
 
-1. run makefile: notebook per eseguire il workflow del progetto
+1. `run project.ipynb`: notebook per eseguire il workflow del progetto (usa makefile)
+2. `setup.ipynb`: notebook per creare e distribuire il progetto come pacchetto installabile
+3. `notebook.ipynb`: un notebook vuoto di esempio

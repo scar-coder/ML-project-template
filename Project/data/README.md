@@ -2,9 +2,7 @@
 
 La cartella _data/_ serve per **archiviare**, **organizzare** e **gestire** i **dataset** utilizzati in un progetto di Machine Learning, Deep Learning o Data Science. Una buona organizzazione aiuta a mantenere il progetto _pulito, evitare errori e garantire riproducibilità_.
 
----
-
-# Sottocartelle
+Sottocartelle presenti:
 
 1. raw/ - Dati Grezzi: 
     - Dati originali, non modificati. Qui si salvano i file così come vengono raccolti o scaricati 

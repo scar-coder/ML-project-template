@@ -10,25 +10,28 @@ from setuptools import setup, find_packages
 
 
 versione_progetto = "0.0.1" # versione del pacchetto
-nome_progetto = "myPackage" # nome del pacchetto
-descrizione = "descrizione_package"
 requisiti_pacchetti = [
     "numpy>=1.21", 
     "pandas>=1.3.0", 
     "scikit-learn>=1.0.0",
     "matplotlib>=3.4.3",
     ] # pacchetti richiesti
+url_github = "" # URL del repository GitHub
+autore = "" # autore del pacchetto
+email_autore = "" # email dell'autore
+nome_progetto = "" # nome del pacchetto
+descrizione = "breve_descrizione_package"
 
 
 setup(
     name=nome_progetto,
     version=versione_progetto,
     description=descrizione,
-    long_description=open("README.md").read(),
+    long_description=open("README.md").read(), # file README.md per la descrizione estesa
     long_description_content_type="text/markdown",
-    url="https://github.com/scar-coder/"+nome_progetto,
-    author="Danilo Scarpino",
-    author_email="scar.coder@hotmail.com",
+    url=url_github,
+    author=autore,
+    author_email=email_autore,
     packages=find_packages(),
     install_requires=requisiti_pacchetti,
     classifiers=[

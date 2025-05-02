@@ -4,7 +4,7 @@ La cartella _out/_ (abbreviazione di "**output**") viene utilizzata per salvare 
 
 ---
 
-# Sottocartelle
+# Outputs
 
 Lista sottocartelle:
 1. figures/ - Contiene le immagini
