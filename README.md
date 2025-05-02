@@ -55,7 +55,7 @@ Struttura del progetto:
 │   │   ├── 📄 __init__.py      # Inizializzazione del pacchetto utils
 │   └── 📄 README.md            # Documentazione per il codice sorgente
 ├── 📄 __init__.py              # File per definire il pacchetto principale
-├── 📄 LICENSE                  # Licenza del progetto (MIT)
+├── 📄 LICENSE                  # Licenza del progetto
 ├── 📄 main.py                  # Entry point del progetto
 ├── 📄 makefile                 # Automazione delle operazioni comuni
 ├── 📄 run project.ipynb        # Notebook per eseguire il workflow del progetto
@@ -81,10 +81,23 @@ Struttura del README principale del progetto:
 8. Autore e licenza.
 
 
+---
 
+# Gestione ambiente virtuale
 
+Un ambiente virtuale (virtual environment) in Python permette di **isolare** le **dipendenze** di un progetto, **evitando** **conflitti** con altre installazioni di librerie nel sistema:
+
+1. Apri il Terminale o il Prompt dei Comandi
+    - Assicurati di essere nella directory principale del tuo progetto o di scegliere una directory appropriata in cui creare il tuo ambiente virtuale
+1. Esegui `python -m venv env_progetto` (esempio di nome: env_progetto)
+    - crea una directory env_progetto nella tua directory corrente. All’interno di questa directory, verranno creati i file e le cartelle necessari per l’ambiente virtuale
+3. Attiva l’Ambiente Virtuale
+    - Linux: `source env_progetto/bin/activate`
+    - Windows: `env_progetto\Scripts\activate`
+4. Solo a fine lavoro: esegui da terminale `deactivate` per uscire dall'ambiente virtuale.
 
 ---
+
 # Gestione librerie python da terminale
 
 Installare una libreria:
@@ -103,20 +116,6 @@ Disinstallare una libreria:
 ```
 pip uninstall nome_libreria
 ```
-
----
-# Gestione ambiente virtuale
-
-Un ambiente virtuale (virtual environment) in Python permette di **isolare** le **dipendenze** di un progetto, **evitando** **conflitti** con altre installazioni di librerie nel sistema:
-
-1. Apri il Terminale o il Prompt dei Comandi
-    - Assicurati di essere nella directory principale del tuo progetto o di scegliere una directory appropriata in cui creare il tuo ambiente virtuale
-1. Esegui `python -m venv env_progetto` (esempio di nome: env_progetto)
-    - crea una directory env_progetto nella tua directory corrente. All’interno di questa directory, verranno creati i file e le cartelle necessari per l’ambiente virtuale
-3. Attiva l’Ambiente Virtuale
-    - Linux: `source env_progetto/bin/activate`
-    - Windows: `env_progetto\Scripts\activate`
-4. Solo a fine lavoro: esegui da terminale `deactivate` per uscire dall'ambiente virtuale.
 
 
 ---
@@ -158,7 +157,7 @@ Dal notebook `run project.ipynb` (utile per [Google Colab](# Google Colab))
 	- Prima descrizione dettagliata se possibile
 		- suggerimento: usare tecnica delle 5W (Chi/Cosa, Come, Quando, Dove, Perché)
 	- Autore e primi riferimenti
-- Aggiungi una licenza (auto-compilato con github durante la creazione di un repo, Licenza presente: MIT License)
+- Aggiungi una licenza (auto-compilato con github durante la creazione di un repo)
 - (opzionale) aggiorna il parametro VENV nel  [makefile](##makefile)
 - (opzionale) aggiungi le informazioni su autore e progetto in [setup.py](##setup.py)
 
@@ -308,9 +307,6 @@ Nel template sono presenti i seguenti notebooks:
 
 ---
 
-
-
----
 # Ringraziamenti e riferimenti
 
 - [Dott. Gianluca Zaza](https://sites.google.com/site/cilabuniba/people/gianluca-zaza), Università degli Studi di Bari
