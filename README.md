@@ -162,9 +162,9 @@ Dal notebook `project workflow.ipynb` (utile per [Google Colab](# Google Colab))
 - (opzionale) aggiungi le informazioni su autore e progetto in [setup.py](##setup.py)
 
 
->[!TIP] Se 'make' non funziona
+> [!TIP] Se 'make' non funziona
 > Installare make tramite [choco](https://chocolatey.org/install):
->`choco install make`
+> `choco install make`
 >
 > fonte: [stackoverflow: How to run a makefile in windows](https://stackoverflow.com/questions/2532234/how-to-run-a-makefile-in-windows#:~:text=You%20can%20install%20GNU,Run%20choco%20install%20make)
 
