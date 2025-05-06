@@ -4,3 +4,4 @@
 # e non permetterebbe di importarne i moduli.
 
 from .read import *
+from .training import *

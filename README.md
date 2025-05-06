@@ -58,7 +58,7 @@ Struttura del progetto:
 ├── 📄 LICENSE                  # Licenza del progetto
 ├── 📄 main.py                  # Entry point del progetto
 ├── 📄 makefile                 # Automazione delle operazioni comuni
-├── 📄 run project.ipynb        # Notebook per eseguire il workflow del progetto
+├── 📄 project workflow.ipynb        # Notebook per eseguire il workflow del progetto
 ├── 📄 README.md                # Documentazione principale del progetto
 ├── 📄 requirements.txt         # Dipendenze del progetto
 ├── 📄 setup.ipynb              # Notebook per la distribuzione del pacchetto
@@ -143,9 +143,9 @@ drive.mount('/my-drive')
 1. Crea una nuova cartella
 2. clona questo template con `git clone https://github.com/scar-coder/ML-project-template.git`
 
-Dal notebook `run project.ipynb` (utile per [Google Colab](# Google Colab))
-1. Scarica il notebook `run project.ipynb` in una cartella dedicata
-2. Apri il notebook `run project.ipynb`
+Dal notebook `project workflow.ipynb` (utile per [Google Colab](# Google Colab))
+1. Scarica il notebook `project workflow.ipynb` in una cartella dedicata
+2. Apri il notebook `project workflow.ipynb`
 3. Importare i file del progetto col comando presente in "Clona progetto"
 
 ## Workflow di personalizzazione del template
@@ -160,6 +160,14 @@ Dal notebook `run project.ipynb` (utile per [Google Colab](# Google Colab))
 - Aggiungi una licenza (auto-compilato con github durante la creazione di un repo)
 - (opzionale) aggiorna il parametro VENV nel  [makefile](##makefile)
 - (opzionale) aggiungi le informazioni su autore e progetto in [setup.py](##setup.py)
+
+
+>[!bug] Se 'make' non funziona
+> Installare make tramite [choco](https://chocolatey.org/install):
+>`choco install make`
+>
+> fonte: [stackoverflow: How to run a makefile in windows](https://stackoverflow.com/questions/2532234/how-to-run-a-makefile-in-windows#:~:text=You%20can%20install%20GNU,Run%20choco%20install%20make)
+
 
 1. **Modificare** README.md **principale**:
     - Aggiorna descrizione specifica del tuo progetto e aggiorna l'indice se necessario
@@ -300,7 +308,7 @@ La cartella _docs/_ è utilizzata per archiviare la **documentazione** del proge
 La cartella _notebooks/_ viene utilizzata nei progetti di Machine Learning, Deep Learning e Data Science per **contenere** e **organizzare** i **Notebooks Jupyter**(.ipynb), file interattivi essenziali per _l'esplorazione dei dati, la prototipazione, la visualizzazione e l'analisi dei risultati_. Questi file permettono di **scrivere codice** eseguibile, **visualizzare output** e **integrare testo** descrittivo in un unico documento. Possono essere _aperti e modificati_ con **Jupyter Notebook** o **JupyterLab** e sono ampiamente usati anche nello **sviluppo Python**
 
 Nel template sono presenti i seguenti notebooks:
-1. `run project.ipynb`: notebook per eseguire il workflow del progetto (usa makefile)
+1. `project workflow.ipynb`: notebook per eseguire il workflow del progetto (usa makefile)
 2. `setup.ipynb`: notebook per creare e distribuire il progetto come pacchetto installabile
 3. `notebook.ipynb`: un notebook vuoto di esempio
 

@@ -1,23 +1,41 @@
-# Specifica il nome dell’ambiente virtuale
-VENV = venv
-
-# Installa le dipendenze
-install:
-	python3 -m venv $(VENV)
-	$(VENV)/bin/activate
-	$(VENV)/bin/pip install -r requirements.txt
-
+# Comandi specifici di progetto
 # Prepara i dati
 prepare_data:
-	python scripts/preprocess.py
+	python src/model/preprocess.py
 
 # Addestra il modello
 train:
-	python src/train.py --epochs 10 --batch_size 32
+	python src/model/train.py --epochs 10 --batch_size 32
 
 # Esegue i test
 test:
-	pytest tests/
+	pytest src/tests/
+
+
+#---
+
+# Comandi generali 
+
+# Comandi per inizializzare il progetto
+
+# Specifica il nome dell’ambiente virtuale
+VENV = venv
+
+# Carica il progetto da github
+clone:
+	git clone https://github.com/scar-coder/ML-project-template.git
+
+# Installa le dipendenze in base al sistema operativo
+install_win:
+	python -m venv $(VENV)
+	$(VENV)\Scripts\activate
+	$(VENV)\Scripts\pip install -r requirements.txt
+
+install_linux: 
+	python -m venv $(VENV) 
+	$(VENV)/bin/activate 
+	$(VENV)/bin/pip install -r requirements.txt
+
 
 # Pulisce i file temporanei e cache
 clean:
@@ -26,7 +44,7 @@ clean:
 # Aiuto: mostra i comandi disponibili
 help:
 	@echo "Comandi disponibili:"
-	@echo "  make clone		    - Carica progetto da github"
+	@echo "  make clone			- Carica template di progetto da github"
 	@echo "  make install       - Installa le dipendenze"
 	@echo "  make prepare_data  - Prepara il dataset"
 	@echo "  make train         - Addestra il modello"
