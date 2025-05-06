@@ -162,7 +162,8 @@ Dal notebook `project workflow.ipynb` (utile per [Google Colab](# Google Colab))
 - (opzionale) aggiungi le informazioni su autore e progetto in [setup.py](##setup.py)
 
 
-> [!TIP] Se 'make' non funziona
+> [!TIP]
+> Se 'make' non funziona
 > Installare make tramite [choco](https://chocolatey.org/install):
 > `choco install make`
 >
