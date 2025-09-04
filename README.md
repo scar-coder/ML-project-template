@@ -3,7 +3,7 @@
 Template per un progetto di machine learning organizzato e facilmente manutenibile.  
 
 # Indice
-1. [Descrizione struttura del template](# Descrizione struttura del template) 
+1. [Descrizione struttura del template](#Descrizione struttura del template) 
 2. [Gestione README.md](# Gestione README.md) 
 3. [Gestione ambiente virtuale](# Gestione ambiente virtuale)
 4. [Gestione librerie python da terminale](# Gestione librerie python da terminale)
